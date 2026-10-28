@@ -1,5 +1,5 @@
 body {
-  background-color: #808080;
+  background-color: #3c3c3c;
 }
 div {
   color: black;
@@ -9,7 +9,4 @@ div {
   margin-inline: auto;
 }
 @media (prefers-color-scheme: dark) {
-  div {
-    background-color: #c0c0c0;
-  }
 }
