@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang=en>
+<head><title>Resume</title>
+<meta name=charset content=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<link rel=icon href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14'>🌅</text></svg>">
+<link rel=stylesheet href=styles.css>
+</head>
+<body>
+<script src=content.js></script>
+<script>
+(function () {
+  var R = window.RESUME;
+  document.title = "Resume - " + R.name;
+
+  // Build a DOM element. Text is set via textContent, so no escaping needed.
+  function el(tag, text, cls) {
+    var e = document.createElement(tag);
+    if (text != null) e.textContent = text;
+    if (cls) e.className = cls;
+    return e;
+  }
+  function wrap(inner) { // <span>inner</span>
+    var s = el("span");
+    s.appendChild(inner);
+    return s;
+  }
+  function list(items) {
+    var ul = el("ul");
+    items.forEach(function (t) { ul.appendChild(el("li", t)); });
+    return ul;
+  }
+  // A left/right line: <span class="row"><span><i>left</i></span><span class="col"><span><b>loc</b></span><span><i>dates</i></span></span></span>
+  function leftColRow(left, location, dates) {
+    var row = el("span", null, "row");
+    row.appendChild(wrap(el("i", left)));
+    var col = el("span", null, "col");
+    col.appendChild(wrap(el("b", location)));
+    col.appendChild(wrap(el("i", dates)));
+    row.appendChild(col);
+    return row;
+  }
+
+  var page = el("div", null, "page");
+
+  // Name + contact
+  page.appendChild(el("h1", R.name));
+  var contact = el("span", null, "contact");
+  contact.appendChild(el("span", R.contact.location));
+  var email = el("a", R.contact.email);
+  email.setAttribute("href", "mailto:" + R.contact.email);
+  contact.appendChild(wrap(email));
+  page.appendChild(contact);
+
+  // Objective
+  page.appendChild(el("h2", "Objective"));
+  page.appendChild(el("hr"));
+  page.appendChild(el("p", R.objective));
+
+  // Education
+  page.appendChild(el("h2", "Education"));
+  page.appendChild(el("hr"));
+  R.education.forEach(function (edu) {
+    page.appendChild(el("h3", edu.school));
+    page.appendChild(leftColRow(edu.degree, edu.location, edu.dates));
+    page.appendChild(list(edu.details));
+  });
+
+  // Skills
+  page.appendChild(el("h2", "Skills"));
+  page.appendChild(el("hr"));
+  page.appendChild(el("h3", "Frameworks"));
+  page.appendChild(list([R.skills.frameworks]));
+  page.appendChild(el("h3", "Languages"));
+  page.appendChild(list([R.skills.languages]));
+  page.appendChild(el("h3", "Software"));
+  page.appendChild(list([R.skills.software]));
+
+  // Experience
+  page.appendChild(el("h2", "Experience"));
+  page.appendChild(el("hr"));
+  R.experience.forEach(function (job) {
+    page.appendChild(el("h3", job.company));
+    job.roles.forEach(function (role) {
+      page.appendChild(leftColRow(role.title, role.location, role.dates));
+      page.appendChild(list(role.bullets));
+    });
+  });
+
+  // Projects
+  page.appendChild(el("h2", "Projects"));
+  page.appendChild(el("hr"));
+  R.projects.forEach(function (p) {
+    var row = el("span", null, "row");
+    var left = el("p");
+    left.appendChild(el("span", p.title));
+    row.appendChild(left);
+    row.appendChild(wrap(el("i", p.dates)));
+    page.appendChild(row);
+    page.appendChild(list(p.bullets));
+  });
+
+  document.body.appendChild(page);
+})();
+</script>
+</body></html>
