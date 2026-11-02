@@ -2,6 +2,18 @@ body {
   background-color: #3c3c3c;
   font-family: Aptos, Helvetica, sans-serif;
 }
+.print-button {
+  position: fixed;
+  top: 0.25in;
+  right: 0.25in;
+  border: 0;
+  padding: 0.125in;
+  background: white;
+  font: inherit;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
 div.page {
   color: black;
   background-color: white;
@@ -55,4 +67,20 @@ ul {
   align-items: end;
 }
 @media (prefers-color-scheme: dark) {
+}
+@page {
+  margin: 0;
+}
+@media print {
+  body {
+    margin: 0;
+    background: white;
+  }
+  .print-button {
+    display: none;
+  }
+  div.page {
+    max-width: none;
+    margin: 0;
+  }
 }
