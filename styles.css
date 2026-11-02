@@ -22,22 +22,26 @@ div.page {
   margin-inline: auto;
 }
 h1 {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  font-size: 0.25in;
 }
 h2 {
   margin: 0;
   margin-top: 0.125in;
+  font-size: 0.19in;
 }
 h3 {
   margin: 0;
   margin-top: 0.125in;
+  font-size: 0.18in;
 }
 h4 {
   margin: 0;
   margin-top: 0.125in;
+  font-size: 0.17in;
 }
 hr {
   border: 0;
@@ -48,16 +52,21 @@ hr {
 p {
   margin: 0;
   margin-top: 0.125in;
+  font-size: 0.15in;
 }
 ul {
-  margin: 0;
-  margin-top: 0.125in;
+  margin: 0;  
+  margin-top: 0.075in;
+}
+li {
+  font-size: 0.15in;
 }
 .contact {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.125in;
+  font-size: 0.17in;
 }
 .row {
   display: flex;
@@ -70,9 +79,7 @@ ul {
   align-items: end;
 }
 .dates-right {
-  align-items:end;
-}
-@media (prefers-color-scheme: dark) {
+  align-items: end;
 }
 @page {
   margin: 0;
