@@ -10,7 +10,6 @@ window.RESUME = {
   education: [
     {
       school: "Georgia Institute of Technology",
-      degree: "Bachelor of Science (B.S.) in Electrical Engineering",
       location: "Atlanta, GA",
       dates: "Aug 2020",
       details: ["Bachelor of Science (B.S.) in Electrical Engineering"],

@@ -6,18 +6,6 @@ body {
   background-color: #3c3c3c;
   font-family: Aptos, Helvetica, sans-serif;
 }
-.print-button {
-  position: fixed;
-  top: 0.25in;
-  right: 0.25in;
-  border: 0;
-  padding: 0.125in;
-  background: white;
-  font: inherit;
-  font-size: 1.25rem;
-  line-height: 1;
-  cursor: pointer;
-}
 div.page {
   color: black;
   background-color: white;
@@ -34,18 +22,20 @@ h1 {
 }
 h2 {
   margin: 0;
-  margin-top: 0.125in;
-  font-size: 0.19in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.17in;
+  font-weight: normal;
+  gap: 0.125in;
 }
 h3 {
   margin: 0;
   margin-top: 0.125in;
-  font-size: 0.18in;
 }
 h4 {
   margin: 0;
   margin-top: 0.125in;
-  font-size: 0.17in;
 }
 hr {
   border: 0;
@@ -56,21 +46,10 @@ hr {
 p {
   margin: 0;
   margin-top: 0.125in;
-  font-size: 0.15in;
 }
 ul {
   margin: 0;  
   margin-top: 0.075in;
-}
-li {
-  font-size: 0.15in;
-}
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.125in;
-  font-size: 0.17in;
 }
 .row {
   display: flex;
@@ -82,8 +61,26 @@ li {
   flex-direction: column;
   align-items: end;
 }
+.category {
+  font-size: 0.2in;
+}
+.rest {
+  font-size: 0.17in;
+}
 .dates-right {
   align-items: end;
+}
+.print-button {
+  position: fixed;
+  top: 0.25in;
+  right: 0.25in;
+  border: 0;
+  padding: 0.125in;
+  background: white;
+  font: inherit;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
 }
 @page {
   margin: 0;
