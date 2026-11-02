@@ -16,17 +16,14 @@ div.page {
 h1 {
   margin: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 0.25in;
+  justify-content: center;
 }
 h2 {
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.17in;
-  font-weight: normal;
   gap: 0.125in;
 }
 h3 {
@@ -53,19 +50,22 @@ ul {
 }
 .row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
-.col {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
+.name {
+  font-size: 0.30in;
+  font-weight: bold;
+}
+.contact {
+  font-size: 0.18in;
+  font-weight: normal;
 }
 .category {
   font-size: 0.2in;
 }
 .rest {
-  font-size: 0.17in;
+  font-size: 0.16in;
 }
 .dates-right {
   align-items: end;

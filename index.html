@@ -46,10 +46,10 @@
   var page = el("div", null, "page");
 
   // Name + contact
-  page.appendChild(el("h1", R.name));
+  page.appendChild(el("h1", R.name, "name"));
   var contact = el("h2");
-  contact.appendChild(el("span", R.contact.location));
-  var email = el("a", R.contact.email);
+  contact.appendChild(el("span", R.contact.location, "contact"));
+  var email = el("a", R.contact.email, "contact");
   email.setAttribute("href", "mailto:" + R.contact.email);
   contact.appendChild(wrap(email));
   page.appendChild(contact);
