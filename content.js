@@ -1,5 +1,5 @@
 // All resume text lives here. Edit this file to change the resume.
-// static.html reads this and builds the page from it.
+// index.html reads this and builds the page from it.
 window.RESUME = {
   name: "Luke Rucker",
   contact: {
@@ -17,9 +17,8 @@ window.RESUME = {
     },
   ],
   skills: {
-    frameworks: "NET, Angular, NestJS, React Native, Spring Boot",
     languages: "ASM, C, C++, C#, HTML/CSS, Go, Java, JavaScript, Ladder Logic, MATLAB, Python, Rust, SQL, TypeScript",
-    software: "Azure DevOps, BigQuery, Blazemeter, git, Google Cloud, Harness, IntelliJ, Jupyter, Kusto, Microsoft Azure, Multisim, Postman, Power BI, React, Redis, Visual Studio, VS Code",
+    software: ".NET, Azure DevOps, BigQuery, Blazemeter, Git, Google Cloud, Harness, IntelliJ, Jupyter, Kusto, Microsoft Azure, Multisim, NestJS, Postgres, Postman, Power BI, React Native, Redis, Spring Boot, Visual Studio",
   },
   experience: [
     {
@@ -27,12 +26,17 @@ window.RESUME = {
       roles: [
         {
           title: "Software Engineer II",
-          location: "Los Angeles, CA",
+          location: "Atlanta, GA → Los Angeles, CA",
           dates: "Aug 2023 – Present",
           bullets: [
             "Contributed features enhancements to an internal .NET application responsible for bringing > 50k physical network devices per month to production with quality checks, resulting in cycle time improvements for P99 from 1200h hrs → 175 hrs, P75 from 38 hrs → 0.5 hrs, average from 84 hrs → 11 hrs.",
           ],
         },
+      ],
+    },
+    {
+      company: "Microsoft",
+      roles: [
         {
           title: "Software Engineer I",
           location: "Atlanta, GA",
@@ -63,7 +67,7 @@ window.RESUME = {
       company: "Comcast",
       roles: [
         {
-          title: "Critical Infrastructure and Deployment Operations Engineering Intern",
+          title: "Critical Infrastructure & Deployment Ops Engineer Intern",
           location: "Atlanta, GA",
           dates: "May 2019 – Aug 2019",
           bullets: [
