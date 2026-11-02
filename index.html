@@ -31,14 +31,10 @@
     items.forEach(function (t) { ul.appendChild(el("li", t)); });
     return ul;
   }
-  // A left/right line: <span class="row"><span><i>left</i></span><span class="col"><span><b>loc</b></span><span><i>dates</i></span></span></span>
-  function leftColRow(left, location, dates) {
-    var row = el("span", null, "row");
-    row.appendChild(wrap(el("i", left)));
-    var col = el("span", null, "col");
-    col.appendChild(wrap(el("b", location)));
-    col.appendChild(wrap(el("i", dates)));
-    row.appendChild(col);
+  function leftColRow(left, right) {
+    var row = el("div", null, "row");
+    row.appendChild(left);
+    row.appendChild(right);
     return row;
   }
 
@@ -54,49 +50,55 @@
   page.appendChild(contact);
 
   // Objective
-  page.appendChild(el("h2", "Objective"));
+  page.appendChild(el("h3", "OBJECTIVE"));
   page.appendChild(el("hr"));
   page.appendChild(el("p", R.objective));
 
   // Education
-  page.appendChild(el("h2", "Education"));
+  page.appendChild(el("h3", "EDUCATION"));
   page.appendChild(el("hr"));
   R.education.forEach(function (edu) {
-    page.appendChild(el("h3", edu.school));
-    page.appendChild(leftColRow(edu.degree, edu.location, edu.dates));
-    page.appendChild(list(edu.details));
+    var schoolRow = leftColRow(el("h4", edu.school), el("h4", edu.location));
+    schoolRow.className += " education-heading";
+    page.appendChild(schoolRow);
+    var detailsRow = leftColRow(el("i", edu.details), wrap(el("i", edu.dates)));
+    detailsRow.className += " education-details";
+    page.appendChild(detailsRow);
   });
 
   // Skills
-  page.appendChild(el("h2", "Skills"));
+  page.appendChild(el("h3", "SKILLS"));
   page.appendChild(el("hr"));
-  page.appendChild(el("h3", "Frameworks"));
-  page.appendChild(list([R.skills.frameworks]));
-  page.appendChild(el("h3", "Languages"));
+  page.appendChild(el("h4", "Languages"));
   page.appendChild(list([R.skills.languages]));
-  page.appendChild(el("h3", "Software"));
+  page.appendChild(el("h4", "Software"));
   page.appendChild(list([R.skills.software]));
 
   // Experience
-  page.appendChild(el("h2", "Experience"));
+  page.appendChild(el("h3", "EXPERIENCE"));
   page.appendChild(el("hr"));
   R.experience.forEach(function (job) {
-    page.appendChild(el("h3", job.company));
+    var locations = [];
     job.roles.forEach(function (role) {
-      page.appendChild(leftColRow(role.title, role.location, role.dates));
+      if (locations.indexOf(role.location) === -1) locations.push(role.location);
+    });
+    page.appendChild(leftColRow(el("h4", job.company), el("h4", locations.join(", "))));
+    job.roles.forEach(function (role) {
+      page.appendChild(leftColRow(el("i", role.title), el("i", role.dates)));
       page.appendChild(list(role.bullets));
     });
   });
 
   // Projects
-  page.appendChild(el("h2", "Projects"));
+  page.appendChild(el("h3", "PROJECTS"));
   page.appendChild(el("hr"));
   R.projects.forEach(function (p) {
     var row = el("span", null, "row");
-    var left = el("p");
+    var left = el("h4");
     left.appendChild(el("span", p.title));
     row.appendChild(left);
     row.appendChild(wrap(el("i", p.dates)));
+    row.className += " dates-right";
     page.appendChild(row);
     page.appendChild(list(p.bullets));
   });
