@@ -6,7 +6,7 @@ window.RESUME = {
     location: "Los Angeles, California",
     email: "lukerucker@gmail.com",
   },
-  objective: "Detail / team-oriented software engineer with wide gamut of development experience looking for contributor roles",
+  objective: "Detail / team-oriented software engineer with wide gamut of development experience pursuing contributor roles",
   education: [
     {
       school: "Georgia Institute of Technology",
