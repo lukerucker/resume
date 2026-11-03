@@ -6,6 +6,13 @@ body {
   background-color: #3c3c3c;
   font-family: Aptos, Helvetica, sans-serif;
 }
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  color: black;
+}
 div.page {
   position: relative;
   z-index: 1;
