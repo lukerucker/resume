@@ -24,7 +24,7 @@ window.RESUME = {
       company: "Microsoft",
       roles: [
         {
-          title: "Software Engineer II",
+          title: "Software Engineer II, Physical Network Buildout",
           location: "Atlanta, GA → Los Angeles, CA",
           dates: "Aug 2023 – Present",
           bullets: [
@@ -37,7 +37,7 @@ window.RESUME = {
       company: "Microsoft",
       roles: [
         {
-          title: "Software Engineer I",
+          title: "Software Engineer I, Physical Network Buildout",
           location: "Atlanta, GA",
           dates: "Mar 2022 – Aug 2023",
           bullets: [
@@ -51,7 +51,7 @@ window.RESUME = {
       company: "NCR",
       roles: [
         {
-          title: "Software Engineer",
+          title: "Software Engineer, Business Services Platform",
           location: "Atlanta, GA",
           dates: "Oct 2020 – Mar 2022",
           bullets: [
@@ -66,7 +66,7 @@ window.RESUME = {
       company: "Comcast",
       roles: [
         {
-          title: "Critical Infrastructure & Deployment Ops Engineer Intern",
+          title: "Electrical Engineer Intern, Critical Infra & Deployment Ops",
           location: "Atlanta, GA",
           dates: "May 2019 – Aug 2019",
           bullets: [
