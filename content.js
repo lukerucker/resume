@@ -41,8 +41,8 @@ window.RESUME = {
           location: "Atlanta, GA",
           dates: "Mar 2022 – Aug 2023",
           bullets: [
-            "Designed and implemented datacenter buildout orchestration automation for upgrading chassis, eliminating the need for manual intervention in device refreshes, resulting in a touch-less build experience, saving an estimated $28 million in network equipment re-use costs for FY22.",
-            "Achieved cycle time goals of 2 days per device, with support for network refreshes in multiple hundreds of data centers, including the refresh of approximately 21K devices through Q2FY25.",
+            "Designed and implemented datacenter buildout orchestration to automate chassis upgrades, eliminate manual intervention in device refreshes, and enable touchless execution, contributing an estimated $28 million in network-equipment reuse savings in FY22.",
+            "Met a two-day-per-device cycle-time target while supporting network refreshes across hundreds of data centers, including approximately 21K devices through Q2 FY25.",
           ],
         },
       ],
