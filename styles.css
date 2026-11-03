@@ -3,7 +3,8 @@ html {
   text-size-adjust: 100%;
 }
 body {
-  background-color: #3c3c3c;
+  --surround-color: #3c3c3c;
+  background-color: var(--surround-color);
   font-family: Aptos, Helvetica, sans-serif;
 }
 a,
@@ -22,6 +23,7 @@ div.page {
   padding: 0.5in;
   max-width: 8.5in;
   margin-inline: auto;
+  box-shadow: 0 0 0.125in 0.125in var(--surround-color);
 }
 h1 {
   margin: 0;
@@ -126,6 +128,7 @@ ul {
   div.page {
     margin: 0;
     box-sizing: border-box;
+    box-shadow: none;
   }
   .action-buttons {
     display: none;
