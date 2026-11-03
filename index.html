@@ -66,6 +66,10 @@
   var email = el("a", R.contact.email, "contact");
   email.setAttribute("href", "mailto:" + R.contact.email);
   contact.appendChild(wrap(email));
+  var linkedin = el("a", R.contact.linkedin, "contact");
+  linkedin.setAttribute("href", "https://" + R.contact.linkedin);
+  linkedin.setAttribute("target", "_blank");
+  contact.appendChild(wrap(linkedin));
   page.appendChild(contact);
 
   // Objective
