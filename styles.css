@@ -7,6 +7,8 @@ body {
   font-family: Aptos, Helvetica, sans-serif;
 }
 div.page {
+  position: relative;
+  z-index: 1;
   margin: 0;
   color: black;
   background-color: white;
@@ -77,6 +79,7 @@ ul {
 }
 .action-buttons {
   position: fixed;
+  z-index: 0;
   top: 0.25in;
   right: 0.25in;
   display: flex;
