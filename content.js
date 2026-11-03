@@ -28,7 +28,12 @@ window.RESUME = {
           location: "Atlanta, GA → Los Angeles, CA",
           dates: "Aug 2023 – Present",
           bullets: [
-            "Contributed features enhancements to an internal .NET application responsible for bringing > 50k physical network devices per month to production with quality checks, resulting in cycle time improvements for P99 from 1200h hrs → 175 hrs, P75 from 38 hrs → 0.5 hrs, average from 84 hrs → 11 hrs.",
+            "Built and now own a shared .NET platform that dynamically allocates machines and resources to provision and validate 30K–50K physical network devices monthly across Azure datacenters, spanning dataplane, console, management, and out-of-band infrastructure.",
+            "Led a team of engineers in migrating a business-critical legacy device-validation service to the platform, replacing unreliable workflows with automated provisioning and acceptance gates for safe production promotion.",
+            "Reduced support tickets by 87% by eliminating false alarms and automating safe configuration repairs; eliminated daily engineer requests to restart stuck workflows.",
+            "Expanded platform integrations to 8+ downstream partner teams, enabling reuse of shared provisioning and validation capabilities and extending the benefits of environment and backend improvements across Azure Core.",
+            "Migrated the service to an SDK-style .NET project and onboarded it to current security requirements, enabling predictable dependency resolution and reducing ongoing maintenance for individual contributors.",
+            "Reduced end-to-end device onboarding cycle time, including required data-center technician and engineering interventions: P99 from 1,200 to 175 hours, P75 from 38 to 0.5 hours, and average from 84 to 11 hours.",
           ],
         },
       ],
