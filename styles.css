@@ -125,6 +125,10 @@ ul {
   div.page {
     padding: 1rem;
   }
+  h2 {
+    flex-direction: column;
+    gap: 0;
+  }
   .row {
     flex-direction: column;
     align-items: flex-start;

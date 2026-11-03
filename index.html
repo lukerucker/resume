@@ -14,7 +14,7 @@
   <a class="action-button" id="email-button" aria-label="Email Luke Rucker" title="Email Luke Rucker">
     <img src="svg/email-svgrepo-com.svg" alt="">
   </a>
-  <a class="action-button" href="https://www.linkedin.com/in/lukerucker/" target="_blank" rel="noopener noreferrer" aria-label="Luke Rucker on LinkedIn" title="LinkedIn">
+  <a class="action-button" id="linkedin-button" target="_blank" rel="noopener noreferrer" aria-label="Luke Rucker on LinkedIn" title="LinkedIn">
     <img src="svg/linkedin-svgrepo-com.svg" alt="">
   </a>
 </nav>
@@ -24,6 +24,7 @@
   var R = window.RESUME;
   document.title = "Resume - " + R.name;
   document.getElementById("email-button").href = "mailto:" + R.contact.email;
+  document.getElementById("linkedin-button").href = "https://" + R.contact.linkedin;
 
   // Build a DOM element. Text is set via textContent, so no escaping needed.
   function el(tag, text, cls) {
