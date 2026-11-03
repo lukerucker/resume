@@ -90,11 +90,11 @@ ul {
     margin: 0;
     background: white;
   }
+  div.page {
+    margin: 0;
+    max-width: none;
+  }
   .print-button {
     display: none;
-  }
-  div.page {
-    max-width: none;
-    margin: 0;
   }
 }
