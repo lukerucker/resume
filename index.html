@@ -109,27 +109,6 @@
 
   document.body.appendChild(page);
   document.querySelector(".print-button").addEventListener("click", function () {
-    var measurement = page.cloneNode(true);
-    measurement.style.position = "absolute";
-    measurement.style.top = "0";
-    measurement.style.width = "11in";
-    measurement.style.maxWidth = "none";
-    measurement.style.boxSizing = "border-box";
-    measurement.style.margin = "0";
-    measurement.style.visibility = "hidden";
-    document.body.appendChild(measurement);
-
-    var heightInches = measurement.getBoundingClientRect().height / 96;
-    measurement.remove();
-
-    var printStyle = document.getElementById("dynamic-print-style");
-    if (!printStyle) {
-      printStyle = document.createElement("style");
-      printStyle.id = "dynamic-print-style";
-      document.head.appendChild(printStyle);
-    }
-    printStyle.textContent = "@page { size: 11in " + heightInches + "in; margin: 0; }";
-
     window.print();
   });
 })();
