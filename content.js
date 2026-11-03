@@ -27,7 +27,7 @@ window.RESUME = {
         {
           title: "Software Engineer II, Physical Network Buildout",
           location: "Atlanta, GA → Los Angeles, CA",
-          dates: "Aug 2023 – Present",
+          dates: "Aug 2023 — Present",
           bullets: [
             "Built and now own a shared .NET platform that dynamically allocates machines and resources to provision and validate 30K–50K physical network devices monthly across Azure datacenters, spanning dataplane, console, management, and out-of-band infrastructure.",
             "Led a team of engineers in migrating a business-critical legacy device-validation service to the platform, replacing unreliable workflows with automated provisioning and acceptance gates for safe production promotion.",
@@ -45,7 +45,7 @@ window.RESUME = {
         {
           title: "Software Engineer I, Physical Network Buildout",
           location: "Atlanta, GA",
-          dates: "Mar 2022 – Aug 2023",
+          dates: "Mar 2022 — Aug 2023",
           bullets: [
             "Designed and implemented datacenter buildout orchestration to automate chassis upgrades, eliminate manual intervention in device refreshes, and enable touchless execution, contributing an estimated $28 million in network-equipment reuse savings in FY22.",
             "Met a two-day-per-device cycle-time target while supporting network refreshes across hundreds of data centers, including approximately 21K devices through Q2 FY25.",
@@ -59,7 +59,7 @@ window.RESUME = {
         {
           title: "Software Engineer, Business Services Platform",
           location: "Atlanta, GA",
-          dates: "Oct 2020 – Mar 2022",
+          dates: "Oct 2020 — Mar 2022",
           bullets: [
             "Built and shipped an extensible, vendor-agnostic NestJS recommendation engine for a white-label shopping app, providing product recommendations based on transaction data in BigQuery.",
             "Built and shipped a high-performance React Native component library from scratch, partnering closely with visual designers to create rich and readable animations and components, which were adopted across company applications.",
@@ -74,7 +74,7 @@ window.RESUME = {
         {
           title: "Electrical Engineer Intern, Critical Infra & Deployment Ops",
           location: "Atlanta, GA",
-          dates: "May 2019 – Aug 2019",
+          dates: "May 2019 — Aug 2019",
           bullets: [
             "Built an iPhone inventory app that used computer vision to identify rack-mounted equipment, record its rack position and elevation, and flag changes against prior inventory for user review.",
             "Initiated and drove the evaluation of a data center infrastructure management (DCIM) system for site-level temperature and power monitoring, engaging two prospective vendors, providing site requirements, assessing their platforms, and delivering engineering recommendations to guide adoption.",
@@ -88,7 +88,7 @@ window.RESUME = {
         {
           title: "Controls Engineer Co-op",
           location: "Atlanta, GA",
-          dates: "May 2016 – Dec 2017",
+          dates: "May 2016 — Dec 2017",
           bullets: [
             "Coordinated plant personnel and contractors during equipment installation and startup, updated PLC logic onsite, and aligned execution with project intent.",
             "Programmed PLC control systems for deployments across multiple sites, integrating cameras, lighting, motors, servos, scanners, and variable-frequency drives (VFDs).",

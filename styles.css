@@ -130,6 +130,10 @@ ul {
   .action-buttons {
     display: none;
   }
+  @page {
+    margin: 0;
+    size: 8.5in 19in;
+  }
 }
 @media (max-width: 600px) {
   div.page {
