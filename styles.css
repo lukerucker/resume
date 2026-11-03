@@ -86,11 +86,11 @@ ul {
   height: 0.5in;
   border: 0;
   padding: 0.125in;
-  background: white;
+  background: #f0f0f0;
   cursor: pointer;
 }
 .action-button:hover {
-  background: #f0f0f0;
+  background: #d0d0d0;
 }
 .action-button:focus-visible {
   outline: 2px solid #2864dc;
@@ -100,11 +100,6 @@ ul {
   display: block;
   width: 1.25rem;
   height: 1.25rem;
-}
-.print-button {
-  font: inherit;
-  font-size: 1.25rem;
-  line-height: 1;
 }
 .action-button:not(button) {
   text-decoration: none;
