@@ -7,12 +7,23 @@
 <link rel=stylesheet href=styles.css>
 </head>
 <body>
-<button class=print-button type=button aria-label="Print Resume" title="Print Resume">🖨️</button>
+<nav class="action-buttons" aria-label="Resume actions">
+  <button class="action-button print-button" type=button aria-label="Print" title="Print">
+    <img src="svg/printer-svgrepo-com.svg" alt="">
+  </button>
+  <a class="action-button" id="email-button" aria-label="Email Luke Rucker" title="Email Luke Rucker">
+    <img src="svg/email-svgrepo-com.svg" alt="">
+  </a>
+  <a class="action-button" href="https://www.linkedin.com/in/lukerucker/" target="_blank" rel="noopener noreferrer" aria-label="Luke Rucker on LinkedIn" title="LinkedIn">
+    <img src="svg/linkedin-svgrepo-com.svg" alt="">
+  </a>
+</nav>
 <script src=content.js></script>
 <script>
 (function () {
   var R = window.RESUME;
   document.title = "Resume - " + R.name;
+  document.getElementById("email-button").href = "mailto:" + R.contact.email;
 
   // Build a DOM element. Text is set via textContent, so no escaping needed.
   function el(tag, text, cls) {
