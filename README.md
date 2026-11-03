@@ -1,1 +1,1 @@
-[Luke Rucker Resume](https://github.io/lukerucker/resume)
+[Luke Rucker Resume](https://lukerucker.github.io/resume)
