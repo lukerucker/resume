@@ -11,8 +11,6 @@ a, a:visited, a:hover, a:active, a:focus {
   color: black;
 }
 div.page {
-  position: relative;
-  z-index: 1;
   margin: 0;
   color: black;
   background-color: white;
@@ -83,8 +81,7 @@ ul {
   align-items: end;
 }
 .action-buttons {
-  position: fixed;
-  z-index: 0;
+  position: absolute;
   top: 0.25in;
   right: 0.25in;
   display: flex;
@@ -147,7 +144,7 @@ ul {
     align-items: flex-start;
   }
 }
-@media (max-width: 8.5in) {
+@media (max-width: 11.5in) {
   .action-buttons {
     display: none;
   }
