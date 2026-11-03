@@ -92,7 +92,9 @@ ul {
   }
   div.page {
     margin: 0;
+    width: 11in;
     max-width: none;
+    box-sizing: border-box;
   }
   .print-button {
     display: none;
