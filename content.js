@@ -3,7 +3,7 @@
 window.RESUME = {
   name: "Luke Rucker",
   contact: {
-    location: "Los Angeles, California",
+    location: "Los Angeles, CA",
     email: "lukerucker@gmail.com",
   },
   objective: "Detail / team-oriented software engineer with wide gamut of development experience pursuing contributor roles",

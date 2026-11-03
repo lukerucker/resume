@@ -7,6 +7,7 @@ body {
   font-family: Aptos, Helvetica, sans-serif;
 }
 div.page {
+  margin: 0;
   color: black;
   background-color: white;
   padding: 0.5in;
@@ -32,12 +33,12 @@ h3 {
 }
 h4 {
   margin: 0;
-  margin-top: 0.125in;
 }
 hr {
   border: 0;
   border-top: 0.025in solid black;
   margin: 0;
+  margin-bottom: 0.125in;
   padding: 0;
 }
 p {
@@ -47,6 +48,7 @@ p {
 ul {
   margin: 0;  
   margin-top: 0.075in;
+  margin-bottom: 0.075in;
 }
 .row {
   display: flex;
@@ -67,7 +69,10 @@ ul {
 .rest {
   font-size: 0.16in;
 }
-.dates-right {
+.left {
+  align-items: end;
+}
+.right {
   align-items: end;
 }
 .action-buttons {
@@ -110,11 +115,18 @@ ul {
   }
   div.page {
     margin: 0;
-    width: 11in;
-    max-width: none;
     box-sizing: border-box;
   }
   .action-buttons {
     display: none;
+  }
+}
+@media (max-width: 600px) {
+  div.page {
+    padding: 1rem;
+  }
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

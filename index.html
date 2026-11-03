@@ -49,7 +49,9 @@
   }
   function leftColRow(left, right) {
     var row = el("div", null, "row");
+    left.className += " left";
     row.appendChild(left);
+    right.className += " right";
     row.appendChild(right);
     return row;
   }
@@ -113,7 +115,7 @@
     left.appendChild(el("span", p.title));
     row.appendChild(left);
     row.appendChild(wrap(el("i", p.dates)));
-    row.className += " dates-right";
+    row.className += " right";
     page.appendChild(row);
     page.appendChild(list(p.bullets));
   });
