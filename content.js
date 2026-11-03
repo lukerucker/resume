@@ -97,16 +97,16 @@ window.RESUME = {
       title: "Computer Vision Phone App",
       dates: "Autumn 2017",
       bullets: [
-        "Developed iPhone app capable of recognizing faceplates of rack-mounted server equipment in Comcast datacenters and headends.",
-        "Sourced annotations from interns via web-based frontend, which populates a database for training the model.",
+        "Built an iPhone app using YOLO-based object detection to identify rack-mounted server faceplates in Comcast data centers and headends.",
+        "Developed a web-based annotation workflow that collected labeled images from interns and stored them in a database to train the detection model.",
       ],
     },
     {
       title: "Package Scanner Sort System",
       dates: "Spring 2017",
       bullets: [
-        "Developed software for a PLC to process data from multiple barcode scanner cameras to make determinations for package destinations to be transported for shipping.",
-        "Configured cameras to match angular speed of packages necessary for clear acquisitions via correct focal distance, adequately high shutter speeds, and ISO dialed within reasonable signal to noise ratio bounds to provide readings without failure.",
+        "Developed PLC software integrating four photoeye-triggered cameras to read package barcodes and route boxes to the correct shipping destinations on an industrial conveyor.",
+        "Configured camera focus, shutter speed, and ISO to capture reliable barcode images from packages moving at conveyor speed.",
       ],
     },
   ],
