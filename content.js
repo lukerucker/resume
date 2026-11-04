@@ -29,7 +29,7 @@ window.RESUME = {
           location: "Atlanta, GA → Los Angeles, CA",
           dates: "Aug 2023 — Present",
           bullets: [
-            "Built and now own a shared .NET platform that dynamically allocates machines and resources to provision and validate 30K–50K physical network devices monthly across Azure datacenters, spanning dataplane, console, management, and out-of-band infrastructure.",
+            "Built and operate a shared .NET platform that dynamically allocates machines and resources to provision and validate 30K-50K physical network devices monthly across Azure datacenters, spanning dataplane, console, management, and out-of-band infrastructure.",
             "Led a team of engineers in migrating a business-critical legacy device-validation service to the platform, replacing unreliable workflows with automated provisioning and acceptance gates for safe production promotion. Modernized it to SDK-style .NET, cutting average build time by 87% and closing all dependency vulnerabilities.",
             "Reduced end-to-end device onboarding cycle time, including required data-center technician and engineering interventions - P99: 1200 → 175 hr, P75: 38 → 0.5 hr, AVG: 84 → 11 hr.",
             "Expanded platform integrations to 8+ downstream partner teams, enabling reuse of shared provisioning and validation capabilities instead of each team maintaining its own tooling.",
