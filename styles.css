@@ -81,7 +81,7 @@ ul {
   align-items: end;
 }
 .action-buttons {
-  position: absolute;
+  position: fixed;
   top: 0.25in;
   right: 0.25in;
   display: flex;
