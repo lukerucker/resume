@@ -12,7 +12,7 @@ window.RESUME = {
     {
       school: "Georgia Institute of Technology",
       location: "Atlanta, GA",
-      dates: "Aug 2020",
+      dates: "2020",
       details: ["Bachelor of Science (B.S.) in Electrical Engineering"],
     },
   ],
@@ -47,8 +47,7 @@ window.RESUME = {
           location: "Atlanta, GA",
           dates: "Mar 2022 — Aug 2023",
           bullets: [
-            "Designed and implemented datacenter buildout orchestration to automate chassis upgrades, eliminate manual intervention in device refreshes, and enable touchless execution, contributing an estimated $28 million in network-equipment reuse savings in FY22.",
-            "Met a two-day-per-device cycle-time target while supporting network refreshes across hundreds of data centers, including approximately 21K devices through Q2 FY25.",
+            "Built and shipped datacenter buildout orchestration automating 100G→400G chassis upgrades and enabling touchless refreshes of ~21K devices across 300+ datacenters, enabling $28M in equipment reuse savings in FY22.",
           ],
         },
       ],
