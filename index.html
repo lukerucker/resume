@@ -22,7 +22,7 @@
 <script>
 (function () {
   var R = window.RESUME;
-  document.title = "Resume - " + R.name;
+  document.title = "Resume - " + R.name + " - " + new Date().toISOString().slice(0, 10);
   document.getElementById("email-button").href = "mailto:" + R.contact.email;
   document.getElementById("linkedin-button").href = "https://" + R.contact.linkedin;
 
