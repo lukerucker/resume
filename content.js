@@ -7,7 +7,7 @@ window.RESUME = {
     email: "lukerucker@gmail.com",
     linkedin: "linkedin.com/in/lukerucker",
   },
-  objective: "Detail / team-oriented software engineer with wide gamut of development experience pursuing contributor roles",
+  objective: "Production-minded software engineer experienced in owning large-scale infrastructure services, automating operations, and leading migrations that improve reliability and cut manual toil. Seeking a Production Engineer role building and operating systems at global scale.",
   education: [
     {
       school: "Georgia Institute of Technology",
