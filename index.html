@@ -126,7 +126,25 @@
   });
 
   document.body.appendChild(page);
+  var printPageStyle = null;
+
+  function clearPrintPageStyle() {
+    if (!printPageStyle) return;
+    printPageStyle.remove();
+    printPageStyle = null;
+  }
+
+  window.addEventListener("afterprint", clearPrintPageStyle);
+
   document.querySelector(".print-button").addEventListener("click", function () {
+    var pageHeightInches = (document.documentElement.scrollHeight / 96 + 0.5).toFixed(2);
+    clearPrintPageStyle();
+    printPageStyle = document.createElement("style");
+    printPageStyle.textContent = `@media print {
+      @page { size: 8.5in ${pageHeightInches}in; margin: 0; }
+      body { margin: 0; }
+    }`;
+    document.head.appendChild(printPageStyle);
     window.print();
   });
 })();

@@ -128,7 +128,6 @@ ul {
   }
   @page {
     margin: 0;
-    size: 8.5in 18in;
   }
 }
 @media (max-width: 600px) {
