@@ -111,7 +111,7 @@ ul {
   height: 1.25rem;
 }
 @page {
-  margin: 0.25in;
+  margin: 0;
 }
 @media print {
   body {
@@ -122,17 +122,16 @@ ul {
     margin: 0;
     box-sizing: border-box;
     box-shadow: none;
-    padding: 0.5in;
   }
   .action-buttons {
     display: none;
   }
   @page {
-    margin: 0.25in;
+    margin: 0;
     size: 8.5in 18in;
   }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   div.page {
     padding: 1rem;
   }
@@ -145,7 +144,7 @@ ul {
     align-items: flex-start;
   }
 }
-@media screen and (max-width: 11.5in) {
+@media (max-width: 11.5in) {
   .action-buttons {
     display: none;
   }
