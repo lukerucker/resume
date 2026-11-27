@@ -137,7 +137,7 @@
   window.addEventListener("afterprint", clearPrintPageStyle);
 
   document.querySelector(".print-button").addEventListener("click", function () {
-    var pageHeightInches = (document.documentElement.scrollHeight / 96 + 0.5).toFixed(2);
+    var pageHeightInches = (document.documentElement.scrollHeight / 96 + 0.75).toFixed(2);
     clearPrintPageStyle();
     printPageStyle = document.createElement("style");
     printPageStyle.textContent = `@media print {
